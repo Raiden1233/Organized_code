@@ -10,9 +10,6 @@ import generator as g
 import class_truth
 
 
-
-
-
 def to_upper(argument):
     return argument.upper()
 
@@ -28,13 +25,6 @@ Raiden = commands.Bot(command_prefix=">", intents=discord.Intents.all())
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
 
 Raiden.remove_command("help")
-
-# discord.Intents.all()
-
-
-
-
-
 
 #_____________________________________________________________________________________________________
 # An event for showing that the raiden is ready to go 
@@ -307,23 +297,7 @@ async def ping(ctx):
     await ctx.channel.send(embed = em)
 
 
-#_____________________________________________________________________________________________________
 
-# @Raiden.command(name="password")
-# async def password(context):
-#     password = g.random_()
-
-#     print(f"Someone generated Password : {password}")
-#     os.remove("password.txt") 
-
-#     em = discord.Embed(title= '> RANDOM PASSWORD', description=f"> **ʜᴇʀᴇ ɪs ʏᴏᴜʀ ɢᴇɴᴇʀᴀᴛᴇᴅ ᴘᴀssᴡᴏʀᴅ: ** `` {password} ``", colour= context.author.color)
-#     em.set_image(url='https://media.discordapp.net/attachments/1010954815192440935/1125824654033035304/Tumblr_l_108190584885447.gif?width=820&height=10')
-
-#     await context.channel.send(embed = em)
-
-
-#_____________________________________________________________________________________________________
-# question game
 
 @Raiden.command()
 async def question(ctx):
