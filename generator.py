@@ -21,10 +21,6 @@ def random_():
     os.remove('pass.txt')
     return p
 
-
-
-# if __name__ == '__main__':
-#     random_()
     
     
     
